@@ -1,0 +1,44 @@
+.container {
+    min-height: 100vh;/*Para que ocupe todo el espacio */
+    background-position: center center;/* Para que se centre la imagen */
+    background-size: cover;/* El cover para que se adapte a los tamaños de pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;/* Solamente funciona con flex-box y grid */
+}
+
+.container__title {
+    display: flex;
+    text-align: center;
+    text-shadow: 0.10em 0.15em #999;
+    font-size: 3rem;
+}
+
+.container__phrase {
+    background-image: url(https://animaniacos.com/images/gifs/lineas/varios/varl0014.gif);
+    width: center;
+    max-width: 30em;
+    background-color: rgba(255, 255, 255, 0.7) ;
+    padding: 1em 2em;
+    line-height: 1.5em 2em;
+    text-align: center;
+    border-radius: 0.7em;
+    font-size: 1.2rem;
+}
+
+.container__btn {
+    padding: 0.8em 1.2em;
+    border-radius: 1.0em;
+    font-size: 14px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+.container__btn:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    box-shadow: 0 0 1.5em #005;
+}
